@@ -65,7 +65,7 @@ def watch_snort_log(
             continue
 
         with log_path.open("r", encoding="utf-8", errors="replace") as f:
-            # Переходим в конец текущего файла, чтобы ловить новые алерты
+            
             for _ in f:
                 line_no += 1
 
